@@ -3,7 +3,7 @@ const fetchBitconPrice = async () => {
     const result = await fetch('https://api.cryptonator.com/api/ticker/btc-usd');
     const data = await result.json();
     const bitcoinPrice = data.ticker.price;
-   showBitcoin.innerText = bitcoinPrice;
+
 }
 function dateFunction() {
     var d = new Date();
